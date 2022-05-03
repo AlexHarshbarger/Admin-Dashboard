@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: inline-grid;
+    background-color:white;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: inline-grid;
+    grid-template-areas: "side head head head head"
+                           "side main main main main"
+                           "side main main main main"
+                           "side main main main main";
+    grid-template-columns: .8fr repeat(4, 1fr);
+    grid-template-rows: .7fr repeat(3, 1fr);
+}
+
+.header {
+    border-radius: 20px;
+    grid-area: head;
+    border: 1px solid black;
+    background-color: lightblue
+}
+
+.sidebar {
+    border-radius: 20px;
+    grid-area: side;
+    border: 1px solid black;
+    background-color: lightcyan;
+}
+
+.main-body {
+    border-radius: 20px;
+    grid-area: main;
+    border: 1px solid black;
+    background-color: rgba(211, 211, 211, 0.5);
+}
