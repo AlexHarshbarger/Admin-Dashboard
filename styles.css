@@ -17,31 +17,42 @@ body {
 }
 
 .sidebar {
-    border-radius: 20px;
     grid-area: side;
     display: inline-grid;
-    border: 1px solid black;
-    background-color: lightcyan;
-    grid-template-columns: ;
-    grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(2, 1fr) 3fr;
+    background-color: white;
+    grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(2, 1fr) 9fr;
 }
 
 .header {
     display: grid;
-    border-radius: 20px;
     grid-area: head;
-    border: 1px solid black;
     background-color: lightblue
 }
 
 .main-body {
-    border-radius: 20px;
     grid-area: main;
-    border: 1px solid black;
     background-color: rgba(211, 211, 211, 0.5);
 }
 
-.sidebar > div {
-    border: 1px solid black;
-    border-radius: 20px;
+.sidebar > a {
+    background-color: #38bdf8;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+svg {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+a:hover {
+    font-size: 35px;
 }
